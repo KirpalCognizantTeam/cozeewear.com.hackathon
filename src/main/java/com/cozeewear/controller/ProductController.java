@@ -52,4 +52,18 @@ public class ProductController {
 
         return new ResponseEntity<Object>(productResponse, HttpStatus.OK);
     }
+
+    //To update Product
+    @PutMapping("/updateProducts")
+    public ResponseEntity<Object> updateProduct(@RequestBody ProductDto product) {
+
+        Product productRequest= modelMapper.map(product, Product.class);
+        Product productPost = this.productService.updateProduct(productRequest);
+        ProductDto productResponse = modelMapper.map(productPost, ProductDto.class);
+
+        return new ResponseEntity<Object>(productResponse, HttpStatus.OK);
+    }
+
+    //To delete Product
+
 }

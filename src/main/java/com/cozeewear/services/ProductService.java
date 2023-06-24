@@ -27,4 +27,8 @@ public class ProductService {
     public Product addProduct(Product product) {
         return productRepo.save(product);
     }
+
+    public Product updateProduct(Product productRequest) {
+        return productRepo.save(productRequest);
+    }
 }
