@@ -21,12 +21,15 @@ We were able to effectively utilize the capabilities of GitHub Copilot to create
 
 1. Generate methods, constructs and controllers using GitHub Copilot suggestions
 2. Use GitHub Copilot to generate test methods for unit testing
-3. Add comment by selecting a chunk
+3. Use GitHub Copilot to generate HTML code
    
 <img width="942" alt="image" src="https://github.com/KirpalCognizantTeam/cozeewear.com.hackathon/assets/136445699/9465985e-558d-4c03-a36d-bd3991a29565">
 
 ---
 ![image](https://github.com/KirpalCognizantTeam/cozeewear.com.hackathon/assets/136445699/039088eb-c0cf-405c-beaa-db9fef9d5eff)
+
+---
+<img width="752" alt="image" src="https://github.com/KirpalCognizantTeam/cozeewear.com.hackathon/assets/136445699/d2507bd8-a9ed-4b4d-b45c-9d4ade1415df">
 
 ## Thanks
 Thanks for the opportunity to explore GitHub Copilot!
