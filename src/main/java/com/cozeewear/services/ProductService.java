@@ -23,4 +23,8 @@ public class ProductService {
     public List<Product> findByProductCategory(String category) {
         return productRepo.findByProductCategory(category);
     }
+
+    public Product addProduct(Product product) {
+        return productRepo.save(product);
+    }
 }
