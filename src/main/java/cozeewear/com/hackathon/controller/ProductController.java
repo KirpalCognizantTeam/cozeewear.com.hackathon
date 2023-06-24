@@ -44,13 +44,14 @@ public class ProductController {
 
     //To add Product
     @PostMapping("/addProducts")
-    public ResponseEntity<Object> addProduct(@RequestBody ProductDto product) {
+    @ResponseBody
+    public ResponseEntity<Object> addProduct(@RequestBody Product product) {
 
-        Product productRequest= modelMapper.map(product, Product.class);
-        Product productPost = this.productService.addProduct(productRequest);
-        ProductDto productResponse = modelMapper.map(productPost, ProductDto.class);
+        //Product productRequest= modelMapper.map(product, Product.class);
+        Product productPost = this.productService.addProduct(product);
+        //ProductDto productResponse = modelMapper.map(productPost, ProductDto.class);
 
-        return new ResponseEntity<Object>(productResponse, HttpStatus.OK);
+        return new ResponseEntity<Object>(productPost, HttpStatus.OK);
     }
 
     //To update Product

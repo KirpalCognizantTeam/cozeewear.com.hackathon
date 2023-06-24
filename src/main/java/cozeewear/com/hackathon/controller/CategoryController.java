@@ -32,4 +32,19 @@ public class CategoryController {
         return new ResponseEntity<Object>(categoryResponse, HttpStatus.OK);
     }
 
+    @PutMapping("/updateCategory")
+    @ResponseBody
+    public ResponseEntity<Object> updateCategory(@RequestBody ProductCategory category){
+
+        //ProductCategory categoryPost = this.categoryService.addCategory(category);
+        ProductCategory categoryResponse = categoryService.updateCategory(category);
+        return new ResponseEntity<Object>(categoryResponse, HttpStatus.OK);
+    }
+    @DeleteMapping("/deleteCategory/{categoryName}")
+    public ResponseEntity<Object> deleteCategory(@PathVariable String categoryName){
+
+        //ProductCategory categoryPost = this.categoryService.addCategory(category);
+        categoryService.deleteCategory(categoryName);
+        return new ResponseEntity<Object>(HttpStatus.OK);
+    }
 }

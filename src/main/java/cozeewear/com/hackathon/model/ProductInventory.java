@@ -15,6 +15,7 @@ import javax.persistence.*;
 public class ProductInventory {
     //create variables for productInventory class inventoryId, productId, quantity, inventoryDate ,discount
 
+
     @Id
     @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
     private int inventoryId;

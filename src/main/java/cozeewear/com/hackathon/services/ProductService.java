@@ -26,7 +26,9 @@ public class ProductService {
     }
 
     public Product addProduct(Product product) {
+        System.out.println(product);
         return productRepo.save(product);
+
     }
 
     public Product updateProduct(Product productRequest) {
@@ -36,4 +38,6 @@ public class ProductService {
     public void deleteProduct(String productName) {
         productRepo.deleteByProductName(productName);
     }
+
+
 }
