@@ -1,10 +1,11 @@
-package com.cozeewear.model;
+package cozeewear.com.hackathon.model;
 
 //provide annotations for  product class to use lombok
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-// import enitity and table annotations from javax.persistence
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -24,7 +25,7 @@ public class Product {
     //create variables for product class productid, productname, productprice, productdescription, productcategory, productimage
        @Id
        @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
-        private int productId;
+        private Integer productId;
     private String productName;
     private double productPrice;
     private String productDescription;
