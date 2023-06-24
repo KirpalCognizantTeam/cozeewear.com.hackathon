@@ -6,16 +6,18 @@ GitHub Copilot Hackathon was conducted by Fastest Coder First is on June 24 2023
 
 The solution created by the team is available in [Github repository](https://github.com/KirpalCognizantTeam/cozeewear.com.hackathon)
 
+## Problem statement:
+___Simple E-commerce Inventory Management System - Develop a simple inventory management system for an e-commerce platform using Java. The system should include basic functionalities such as adding, updating, and removing products, and checking the available stock. Use GitHub Copilot to assist in generating code for implementing different operations and handling edge cases___
+
 ## Architectural flow
 
-___Problem statement:
-Simple E-commerce Inventory Management System - Develop a simple inventory management system for an e-commerce platform using Java. The system should include basic functionalities such as adding, updating, and removing products, and checking the available stock. Use GitHub Copilot to assist in generating code for implementing different operations and handling edge cases___
+The internal portal for Cozeewear to manage inventory will have 2 user roles, admin & employee. Admin can add, delete or update product category, product and update inventory. Employee users will be allowed to only update the inventory.
 
-
+We have used Spring Boot framework, Angular for front end and H2 database for demonstration purpose.
 
 ## Usage of GitHub Copilot
 
-The team was effectively able to utilize the capabilities of GitHub Copilot to create code and test methods in IntelliJ to create the solution for e-commerce inventory management system using Java.
+We were able to effectively utilize the capabilities of GitHub Copilot to create code and test methods in IntelliJ to create the solution for e-commerce inventory management system using Java.
 
 1. Generate methods, constructs and controllers using GitHub Copilot suggestions
 2. Use GitHub Copilot to generate test methods for unit testing
