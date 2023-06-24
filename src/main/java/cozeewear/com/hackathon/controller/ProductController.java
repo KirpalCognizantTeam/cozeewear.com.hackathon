@@ -65,6 +65,7 @@ public class ProductController {
     }
 
     //To delete Product
+    @DeleteMapping("/deleteProducts/{productName}")
     public ResponseEntity<Object> deleteProduct(@PathVariable String productName) {
 
         if(productService.findByProductName(productName)!=null) {

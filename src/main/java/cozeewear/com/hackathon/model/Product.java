@@ -6,10 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 //create a table with name product
@@ -29,8 +26,15 @@ public class Product {
     private String productName;
     private double productPrice;
     private String productDescription;
-    private int productCategory;
+    @ManyToOne
+    @JoinColumn(name = "categoryId")
+    private ProductCategory productCategory;
     private String productImage;
+    @OneToOne(mappedBy = "product", cascade = CascadeType.ALL)
+    @JoinColumn(name = "inventoryId")
+    private ProductInventory productInventory;
+
+
 
 
 }
