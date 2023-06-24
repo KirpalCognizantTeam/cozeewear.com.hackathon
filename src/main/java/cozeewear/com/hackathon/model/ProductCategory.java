@@ -4,11 +4,10 @@ package cozeewear.com.hackathon.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import cozeewear.com.hackathon.model.Product;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="ProductCategory")
@@ -21,7 +20,8 @@ public class ProductCategory {
     private String categoryName;
     private String categoryDescription;
     private String categoryImage;
-
+    @OneToMany(mappedBy = "productCategory", cascade = CascadeType.ALL)
+    private List<Product> products;
 
     public ProductCategory() {
     }

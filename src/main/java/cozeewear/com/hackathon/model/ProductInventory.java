@@ -5,10 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Table(name="ProductInventory")
 @Entity
@@ -25,5 +22,6 @@ public class ProductInventory {
     private int quantity;
     private String inventoryDate;
     private double discount;
-
+    @OneToOne(cascade = CascadeType.ALL)
+    private Product product;
     }
