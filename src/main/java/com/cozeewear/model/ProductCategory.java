@@ -2,9 +2,11 @@ package com.cozeewear.model;
 
 public class ProductCategory {
     private int categoryId;
+
     private String categoryName;
     private String categoryDescription;
     private String categoryImage;
+
 
     public ProductCategory() {
     }
