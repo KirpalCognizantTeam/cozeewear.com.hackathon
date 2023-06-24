@@ -1,4 +1,4 @@
-package com.cozeewear.model;
+package cozeewear.com.hackathon.model;
 
 import lombok.Data;
 

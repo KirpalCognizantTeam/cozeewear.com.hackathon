@@ -1,7 +1,8 @@
-package com.cozeewear.services;
+package cozeewear.com.hackathon.services;
 
-import com.cozeewear.model.Product;
-import com.cozeewear.repo.ProductRepo;
+
+import cozeewear.com.hackathon.model.Product;
+import cozeewear.com.hackathon.repo.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,5 +31,9 @@ public class ProductService {
 
     public Product updateProduct(Product productRequest) {
         return productRepo.save(productRequest);
+    }
+
+    public void deleteProduct(String productName) {
+        productRepo.deleteByProductName(productName);
     }
 }

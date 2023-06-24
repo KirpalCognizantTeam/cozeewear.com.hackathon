@@ -1,4 +1,4 @@
-package com.cozeewear.controller;
+package cozeewear.com.hackathon.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
